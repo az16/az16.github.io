@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Human Factors on Albin Zeqiri</title>
+    <link>http://localhost:1313/tags/human-factors/</link>
+    <description>Recent content in Human Factors on Albin Zeqiri</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 25 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/human-factors/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bumpy Ride? Understanding the Effects of External Forces on Spatial Interactions in Moving Vehicles</title>
+      <link>http://localhost:1313/projects/bumpyride/</link>
+      <pubDate>Fri, 25 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/bumpyride/</guid>
+      <description>&lt;figure&gt;&lt;img src=&#34;https://dl.acm.org/cms/10.1145/3706598.3714077/asset/e187b392-7df9-4257-a872-05c46cab7728/assets/images/large/chi25-985-fig1.jpg&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h1 id=&#34;abstract&#34;&gt;Abstract&lt;/h1&gt;&#xA;&lt;p&gt;As the use of Head-Mounted Displays in moving vehicles increases, passengers can immerse themselves in visual experiences independent of their physical environment. However, interaction methods are susceptible to physical motion, leading to input errors and reduced task performance. This work investigates the impact of G-forces, vibrations, and unpredictable maneuvers on 3D interaction methods. We conducted a field study with 24 participants in both stationary and moving vehicles to examine the effects of vehicle motion on four interaction methods: (1) Gaze&amp;amp;Pinch, (2) DirectTouch, (3) Handray, and (4) HeadGaze. Participants performed selections in a Fitts’ Law task. Our findings reveal a significant effect of vehicle motion on interaction accuracy and duration across the tested combinations of Interaction Method × Road Type × Curve Type. We found a significant impact of movement on throughput, error rate, and perceived workload. Finally, we propose future research considerations and recommendations on interaction methods during vehicle movement.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

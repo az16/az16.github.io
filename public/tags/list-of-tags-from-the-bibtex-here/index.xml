@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>List of Tags From the Bibtex Here on Albin Zeqiri</title>
+    <link>http://localhost:1313/tags/list-of-tags-from-the-bibtex-here/</link>
+    <description>Recent content in List of Tags From the Bibtex Here on Albin Zeqiri</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 15 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/list-of-tags-from-the-bibtex-here/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>full title of paper</title>
+      <link>http://localhost:1313/projects/plantpal_chi25/</link>
+      <pubDate>Thu, 15 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/plantpal_chi25/</guid>
+      <description>&lt;p&gt;add teaser figure here (just add the command )&lt;/p&gt;&#xA;&lt;h1 id=&#34;abstract&#34;&gt;Abstract&lt;/h1&gt;</description>
+    </item>
+  </channel>
+</rss>

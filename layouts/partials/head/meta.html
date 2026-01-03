@@ -1,0 +1,101 @@
+{{ .Scratch.Set "title" .Site.Title }}
+
+{{ .Scratch.Set "publisherIcon" .Site.Params.favicon }}
+{{ if .Site.Params.publisher_icon }}
+    {{ .Scratch.Set "publisherIcon" .Site.Params.publisher_icon }}
+{{ end }}
+
+{{ if eq .Kind "home" }}
+  {{ .Scratch.Set "title" ($.Site.Title | default $.Site.Params.brand) }}
+  {{ .Scratch.Set "description" .Site.Params.description }}
+{{ else }}
+  {{ .Scratch.Set "description" .Description }}
+{{ end }}
+
+{{ if .IsSection }}
+  {{ .Scratch.Set "title" ($.Site.Title | default $.Site.Params.brand) }}
+  {{ .Scratch.Add "title" " - " }}
+  {{ .Scratch.Add "title" .LinkTitle }}
+{{ end }}
+
+{{ if .IsPage }}
+  {{ .Scratch.Set "title" ($.Site.Title | default $.Site.Params.brand) }}
+  {{ .Scratch.Add "title" " - " }}
+  {{ .Scratch.Add "title" .LinkTitle }}
+{{ end }}
+
+{{ $description := "" }}
+{{ if isset .Params "description" }}
+  {{ $description = .Params.description }}
+{{ else }}
+  {{ $description = (.Scratch.Get "description") }}
+  {{ if eq $description "" }}
+    {{ $description = .Site.Params.description }}
+  {{ end }}
+{{ end }}
+
+{{ $image := .Site.Params.og_image }}
+{{ if isset .Params "image" }}
+  {{ $image = .Params.image }}
+{{ end }}
+
+<!-- Primary Meta Tags -->
+<meta name="title" content="{{ (.Scratch.Get "title") | default .Site.Title }}">
+<meta name="description" content="{{ $description | plainify }}">
+
+{{ if .Keywords }}
+    <meta name="keywords" content="{{ delimit .Keywords "," }}">
+{{ end }}
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:title" content="{{ (.Scratch.Get "title") | default .Site.Title }}">
+<meta property="og:description" content="{{ $description | plainify }}">
+{{ if ne $image "" }}
+    <meta property="og:image" content="{{ $image | absURL }}">
+{{ end }}
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="{{ .Permalink }}">
+<meta property="twitter:title" content="{{ (.Scratch.Get "title") | default .Site.Title }}">
+<meta property="twitter:description" content="{{ $description | plainify }}">
+{{ if ne $image "" }}
+    <meta property="twitter:image" content="{{ $image | absURL }}">
+{{ end }}
+
+<!-- Canonical -->
+<link rel="canonical" href="{{ .Permalink }}">
+
+<!-- Schema.org JSON-LD -->
+<script type="application/ld+json">
+  {{if .IsPage}}
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "{{ .LinkTitle }}",
+      "description": "{{ $description | plainify }}",
+      "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}",
+      {{ if .Lastmod }}"dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",{{ end }}
+      "author": {
+        "@type": "Person",
+        "name": "{{ .Site.Title }}"
+      }
+      {{ if ne $image "" }}
+      ,"image": "{{ $image | absURL }}"
+      {{ end }}
+    }
+  {{else}}
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "{{ .Site.Title }}",
+      "description": "{{ .Site.Params.description | plainify }}",
+      "url": "{{ .Site.BaseURL }}"
+      {{ if ne $image "" }}
+      ,"image": "{{ $image | absURL }}"
+      {{ end }}
+    }
+  {{end}}
+</script>

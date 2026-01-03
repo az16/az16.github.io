@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ablation Study on Albin Zeqiri</title>
+    <link>http://localhost:1313/tags/ablation-study/</link>
+    <description>Recent content in Ablation Study on Albin Zeqiri</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ablation-study/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Exploring Contextual Feature Combinations for Prediction of Subjective Thermal Perceptions</title>
+      <link>http://localhost:1313/projects/thermalfeature/</link>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/thermalfeature/</guid>
+      <description>&lt;h1 id=&#34;exploring-contextual-feature-combinations-for-prediction-of-subjective-thermal-perceptions&#34;&gt;Exploring Contextual Feature Combinations for Prediction of Subjective Thermal Perceptions&lt;/h1&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://cloudstore.uni-ulm.de/apps/files_sharing/publicpreview/7SyFePiCzcWioqc?file=/&amp;amp;fileId=140650255&amp;amp;x=3024&amp;amp;y=1964&amp;amp;a=true&amp;amp;etag=118823c4c39d8a15f83c1ad1adc54e50&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h2&gt;Abstract&lt;/h2&gt;&#xA;Thermal attributes in the environment impact well-being, but their inclusion in standard well-being monitoring is challenging due to complex measurement requirements. Industry standards like the Predicted Mean Vote (PMV) index need numerous measures and specialized setups, making large-scale applications impractical. This study investigates predicting thermal perception ratings using only contextual factors. We conducted an ablation study using the Chinese Thermal Comfort Dataset (CTCD) and a Random Forest (RF) classifier to evaluate prediction performance with different contextual feature combinations on five labeling scales. Results showed that omitting measures required for PMV index calculation and relying on contextual features exclusively achieved F1 scores similar to those when including PMV measures. Key predictive factors included daily outdoor temperature and a person&#39;s clothing, weight, and age. These findings suggest that leveraging more accessible contextual data to estimate thermal perception ratings is promising, and further research should explore more contextual factors to enhance prediction accuracy and support well-being assessments.</description>
+    </item>
+    <item>
+      <title>AutoTherm: A Dataset and Benchmark for Thermal Comfort Estimation Indoors and in Vehicles</title>
+      <link>http://localhost:1313/projects/autotherm/</link>
+      <pubDate>Thu, 25 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/autotherm/</guid>
+      <description>&lt;h1 id=&#34;autotherm-a-dataset-and-benchmark-for-thermal-comfort-estimation-indoors-and-in-vehicles&#34;&gt;AutoTherm: A Dataset and Benchmark for Thermal Comfort Estimation Indoors and in Vehicles&lt;/h1&gt;&#xA;&lt;figure&gt;&lt;img src=&#34;https://viscom.publications.uni-ulm.de/api/uploads/251/teaser%20%283%29.jpg&#34;&gt;&#xA;&lt;/figure&gt;&#xA;&#xA;&lt;h2&gt;Abstract&lt;/h2&gt;&#xA;Thermal comfort inside buildings is a well-studied field where human judgment for thermal comfort is collected and may be used for automatic thermal comfort estimation. However, indoor scenarios are rather static in terms of thermal state changes and, thus, cannot be applied to dynamic conditions, e.g., inside a vehicle. In this work, we present our findings of a gap between building and in-vehicle scenarios regarding thermal comfort estimation. We provide evidence by comparing deep neural classifiers for thermal comfort estimation for indoor and in-vehicle conditions. Further, we introduce a temporal dataset for indoor predictions incorporating 31 input signals and self-labeled user ratings by 18 subjects in a self-built climatic chamber. For in-vehicle scenarios, we acquired a second dataset featuring human judgments from 20 subjects in a BMW 3 Series. Our experimental results indicate superior performance for estimations from time series data over single vector input. Leveraging modern machine learning architectures enables us to recognize human thermal comfort states and estimate future states automatically. We provide details on training a recurrent network-based classifier and perform an initial performance benchmark of the proposed dataset. Ultimately, we compare our collected dataset to publicly available thermal comfort datasets.</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,35 @@
+baseURL = "http://localhost:1313/"
+languageCode = 'en-us'
+title = 'Albin Zeqiri'
+theme = 'poison'
+
+[params]
+    brand = "Albin Zeqiri"
+    brand_image = "https://i1.rgstatic.net/ii/profile.image/11431281080373059-1661262052655_Q512/Albin-Zeqiri.jpg"
+    description = "HCI Researcher and Doctoral Candidate @Ulm University"
+    resume_url = "/resume.pdf"
+
+    # Social links (academic)
+    email_url = "mailto:zeqiri.albin@outlook.de"
+    github_url = "https://github.com/az16"
+    linkedin_url = "https://www.linkedin.com/in/albinzeq/"
+    twitter_url = "https://x.com/azeqiri6"
+    scholar_url = "https://scholar.google.com/citations?hl=de&user=UX-Ub5wAAAAJ"
+    researchgate_url = "https://www.researchgate.net/profile/Albin-Zeqiri"
+    orcid_url = "https://orcid.org/0000-0001-6516-3810"
+    
+    # Light/dark mode
+    dark_mode = true
+    
+    # RSS
+    rss_icon = false
+
+[taxonomies]
+    tags = 'tags'
+
+[markup.goldmark.renderer]
+    unsafe = true
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
