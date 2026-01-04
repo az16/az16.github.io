@@ -79,6 +79,41 @@
       <description></description>
     </item>
     <item>
+      <title>Data Mining</title>
+      <link>http://localhost:1313/tags/data-mining/</link>
+      <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/data-mining/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Language Analysis</title>
+      <link>http://localhost:1313/tags/language-analysis/</link>
+      <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/language-analysis/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Qualitative Methods</title>
+      <link>http://localhost:1313/tags/qualitative-methods/</link>
+      <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/qualitative-methods/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sustainability</title>
+      <link>http://localhost:1313/tags/sustainability/</link>
+      <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/sustainability/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ubiquitous Computing</title>
+      <link>http://localhost:1313/tags/ubiquitous-computing/</link>
+      <pubDate>Fri, 01 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/ubiquitous-computing/</guid>
+      <description></description>
+    </item>
+    <item>
       <title>Ablation Study</title>
       <link>http://localhost:1313/tags/ablation-study/</link>
       <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
@@ -93,45 +128,10 @@
       <description></description>
     </item>
     <item>
-      <title>Ubiquitous Computing</title>
-      <link>http://localhost:1313/tags/ubiquitous-computing/</link>
-      <pubDate>Tue, 01 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/ubiquitous-computing/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>Deep Learning</title>
       <link>http://localhost:1313/tags/deep-learning/</link>
       <pubDate>Thu, 25 Jul 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/tags/deep-learning/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Data Mining</title>
-      <link>http://localhost:1313/tags/data-mining/</link>
-      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/data-mining/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Language Analysis</title>
-      <link>http://localhost:1313/tags/language-analysis/</link>
-      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/language-analysis/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Qualitative Methods</title>
-      <link>http://localhost:1313/tags/qualitative-methods/</link>
-      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/qualitative-methods/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Sustainability</title>
-      <link>http://localhost:1313/tags/sustainability/</link>
-      <pubDate>Fri, 01 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/tags/sustainability/</guid>
       <description></description>
     </item>
   </channel>

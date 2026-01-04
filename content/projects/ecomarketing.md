@@ -1,6 +1,6 @@
 ---
 title: "'Eco Is Just Marketing': Unraveling Everyday Barriers to the Adoption of Energy-Saving Features in Major Home Appliances"
-date: 2024-01-11
+date: 2024-11-01
 featuredImage: "esfs.png"
 authors: ['Albin Zeqiri', 'Pascal Jansen', 'Jan Ole Rixen', 'Michael Rietzler', 'Enrico Rukzio']
 venue: "Proceedings of the ACM Interactive Mobile Wearable Ubiquitous Technology 2024"
