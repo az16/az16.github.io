@@ -1,6 +1,6 @@
 ---
 title: "Exploring Contextual Feature Combinations for Prediction of Subjective Thermal Perceptions"
-date: 2024-10-01
+date: 2024-01-10
 featuredImage: "thermalcontexubicomp.png"
 authors: ['Albin Zeqiri', 'Michael Rietzler', 'Enrico Rukzio']
 venue: "Companion of the 2024 on ACM International Joint Conference on Pervasive and Ubiquitous Computing"
