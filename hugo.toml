@@ -7,7 +7,7 @@ theme = 'poison'
     brand = "Albin Zeqiri"
     brand_image = "https://i1.rgstatic.net/ii/profile.image/11431281080373059-1661262052655_Q512/Albin-Zeqiri.jpg"
     description = "HCI Researcher and Doctoral Candidate @Ulm University"
-    resume_url = "/resume_zeqiri.pdf"
+    resume_url = "/cv_zeqiri.pdf"
 
     # Social links (academic)
     email_url = "mailto:zeqiri.albin@outlook.de"
