@@ -1,0 +1,246 @@
+/* Empty css file that users can override in their own /assets/css/custom.css file */
+
+/* Extend container width so scrollbar appears further right */
+.container.content {
+  width: 100%;
+  max-width: none;
+}
+
+/* Limit actual content width to 60vw using max-width */
+.container.content > * {
+  max-width: 60vw;
+}
+
+body {
+  width: 100%;
+}
+
+html {
+}
+
+/* Hide horizontal line at end of pages */
+hr {
+  display: none;
+}
+
+/* Resource links (PDF, DOI) on project pages */
+.resource-links {
+  display: flex;
+  gap: 0.75rem;
+  margin-right: 1rem;
+}
+
+.heading-with-resources {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.heading-with-resources h1,
+.heading-with-resources h2 {
+  margin: 0;
+  flex: 0 1 auto;
+}
+
+.resource-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  color: var(--link-color);
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.resource-link:hover {
+  background-color: var(--link-color);
+  color: white;
+  border-color: var(--link-color);
+}
+
+
+/* Center social media icons */
+.sidebar-sticky {
+  text-align: center;
+}
+
+/* Download Resume Button */
+.resume-button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--link-color);
+  color: white;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.resume-button:hover {
+  opacity: 0.8;
+}
+
+/* Hide light/dark mode toggle button */
+.light-dark {
+  display: none;
+}
+
+/* Project List Styling */
+.projects-list {
+  margin: 2rem 0;
+}
+
+.project-item {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 15px;
+  max-height: 400px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-media {
+  flex-shrink: 0;
+  padding-top: 1rem;
+  width: 33%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-media img,
+.project-media video {
+  width: auto;
+  height: auto;
+  max-height: 300px;
+  border-radius: 15px;
+}
+
+.project-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.project-info h3 {
+  margin: 0 0 0.5rem 0;
+}
+
+.project-info h3 a {
+  text-decoration: none;
+}
+
+.project-info h6 {
+  margin: 0 0 0.5rem 0;
+  font-weight: bold;
+}
+
+.project-info h6 a {
+  text-decoration: none;
+}
+
+.project-authors {
+  margin: 0.25rem 0;
+  font-size: 0.9em;
+  color: var(--list-color);
+}
+
+.project-venue {
+  margin: 0.25rem 0;
+  font-size: 0.9em;
+  color: var(--date-color);
+  font-style: italic;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+}
+
+.publications-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.publications-header h2 {
+  margin: 0;
+}
+
+.tag-filter-dropdown {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.95em;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.tag-filter-dropdown:hover {
+  border-color: var(--link-color);
+}
+
+.tag-filter-dropdown:focus {
+  outline: none;
+  border-color: var(--link-color);
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.project-item.hidden {
+  display: none;
+}
+
+.project-tags .tag {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 0.65em;
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.project-tags .tag:hover {
+  background-color: #e0e0e0;
+}
+
+/* Tags styling on post/project pages */
+.post-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.post-tags .tag {
+  display: inline-block;
+  padding: 0.3rem 0.6rem;
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 0.65em;
+  font-weight: 500;
+  white-space: nowrap;
+}

@@ -1,0 +1,31 @@
+<div class="projects-list">
+  {{ range sort (where .Site.RegularPages "Section" "projects") ".Date" "desc" }}
+    <div class="project-item" data-tags="{{ delimit .Params.tags "," }}">
+      <div class="project-media">
+        {{ if .Params.featuredImage }}
+          <img src="{{ .Params.featuredImage }}" alt="{{ .Title }}">
+        {{ else if .Params.video }}
+          <video controls>
+            <source src="{{ .Params.video }}" type="video/mp4">
+          </video>
+        {{ end }}
+      </div>
+      <div class="project-info">
+        <h6><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+        {{ if .Params.authors }}
+          <p class="project-authors">
+            {{ range $i, $author := .Params.authors }}{{ if gt $i 0 }}, {{ end }}{{ if eq $author "Albin Zeqiri" }}<strong><u>{{ $author }}</u></strong>{{ else }}{{ $author }}{{ end }}{{ end }}
+          </p>
+        {{ end }}
+        {{ if .Params.venue }}
+          <p class="project-venue">{{ .Params.venue }}</p>
+        {{ end }}
+        {{ if .Params.tags }}
+          <div class="project-tags">
+            {{ range .Params.tags }}<span class="tag" data-tag="{{ . }}">{{ . }}</span>{{ end }}
+          </div>
+        {{ end }}
+      </div>
+    </div>
+  {{ end }}
+</div>
