@@ -112,11 +112,10 @@ hr {
   background-color: white;
   padding: 1rem;
   border-radius: 15px;
-  max-height: none;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Stack projects horizontally only on desktop */
+/* Horizontal layout on desktop */
 @media (min-width: 85em) {
   .project-item {
     flex-direction: row;
@@ -125,9 +124,12 @@ hr {
   }
 }
 
+/* =========================
+   Media container
+   ========================= */
+
 .project-media {
   flex-shrink: 0;
-  padding-top: 0;
   width: 100%;
   height: 250px;
   display: flex;
@@ -135,31 +137,30 @@ hr {
   justify-content: center;
 }
 
-/* Media sizing only on desktop */
+/* Desktop media sizing */
 @media (min-width: 85em) {
   .project-media {
     width: 33%;
     height: 300px;
-    padding-top: 1rem;
   }
 }
+
+/* =========================
+   Media elements
+   ========================= */
 
 .project-media img,
 .project-media video {
   width: 100%;
-  height: auto;
-  max-height: none;
+  height: 100%;
+  object-fit: contain; /* preserves aspect ratio */
+  object-position: center center;
   border-radius: 15px;
 }
 
-/* Media sizing constraints only on desktop */
-@media (min-width: 85em) {
-  .project-media img,
-  .project-media video {
-    width: auto;
-    max-height: 300px;
-  }
-}
+/* =========================
+   Info section
+   ========================= */
 
 .project-info {
   flex-grow: 1;
