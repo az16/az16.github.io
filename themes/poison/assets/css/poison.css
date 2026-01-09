@@ -11,7 +11,7 @@ body.layout-reverse .wrapper {
     color: var(--sidebar-p-color);
 }
 
-@media (min-width: 48em) {
+@media (min-width: 85em) {
     .bullet {
         margin-left: 1em;
         text-decoration-line: underline;
@@ -37,9 +37,11 @@ body.layout-reverse .wrapper {
 @media (max-width: 48em) {
     body > .wrapper, body.layout-reverse .wrapper {
        flex-direction: column;
+       height: auto;
     }
     body {
-       overflow: auto !important;
+       overflow-x: hidden !important;
+       overflow-y: auto !important;
        height: auto !important;
     }
     .heading {
@@ -53,6 +55,10 @@ body.layout-reverse .wrapper {
         width: 20px;
         height: 20px;
         color: black;
+    }
+    .container.content {
+        padding-right: 1rem;
+        padding-left: 1rem;
     }
 }
 
@@ -103,16 +109,42 @@ h1, h2, h3, h4, h5, strong {
 }
 /* ************************** */
 body {
-    overflow: hidden;
-    height: 100vh;
+    overflow-x: hidden;
+    height: auto;
 }
+
+/* Desktop layout - fixed height with scrollable content */
+@media (min-width: 48em) {
+    body {
+        overflow: hidden;
+        height: 100vh;
+    }
+}
+
 body > .wrapper {
     display: flex;
-    height: 100%;
+    flex-direction: column;
+    min-height: 100vh;
 }
+
+/* Desktop layout - horizontal flex layout */
+@media (min-width: 48em) {
+    body > .wrapper {
+        flex-direction: row;
+        height: 100%;
+    }
+}
+
 .container.content {
-    overflow-y: auto;
     flex-grow: 1;
+    overflow-y: auto;
+}
+
+/* Mobile - allow natural scrolling */
+@media (max-width: 47.99em) {
+    .container.content {
+        overflow-y: visible;
+    }
 }
 .layout-reverse .container.content {
     padding-right: 0;

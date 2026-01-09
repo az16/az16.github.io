@@ -4,7 +4,7 @@ date: 2025-04-25
 featuredImage: "plantpal.svg"
 authors: ['Albin Zeqiri', 'Julian Britten', 'Clara Schramm', 'Pascal Jansen', 'Michael Rietzler', 'Enrico Rukzio']
 venue: "Proceedings of the 2025 CHI Conference on Human Factors in Computing Systems"
-tags: ['Urban Informatics', 'Human-Robot Interaction', 'Field Study', 'Exploratory', 'Mixed Methods']
+tags: ['Urban Informatics', 'Sustainability', 'Human-Robot Interaction', 'Field Study', 'Exploratory', 'Mixed Methods']
 pdf: "https://www.uni-ulm.de/fileadmin/website_uni_ulm/iui.inst.100/institut/mitarbeiterbereiche/zeqiri/papers/_CHI25__Robot_supported_Remote_Green_Space_Cultivation.pdf"
 doi: "https://dl.acm.org/doi/10.1145/3706598.3713180"
 ---

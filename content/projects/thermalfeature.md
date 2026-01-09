@@ -4,7 +4,7 @@ date: 2024-10-01
 featuredImage: "thermalcontexubicomp.png"
 authors: ['Albin Zeqiri', 'Michael Rietzler', 'Enrico Rukzio']
 venue: "Companion of the 2024 on ACM International Joint Conference on Pervasive and Ubiquitous Computing"
-tags: ['Thermal perception', 'Ubiquitous Computing', 'Machine Learning', 'Ablation Study']
+tags: ['Thermal perception', 'Sustainability', 'Ubiquitous Computing', 'Machine Learning', 'Ablation Study']
 pdf: "https://dl.acm.org/doi/pdf/10.1145/3675094.3678487"
 doi: "https://dl.acm.org/doi/10.1145/3675094.3678487"
 ---
